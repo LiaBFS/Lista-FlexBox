@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 3</title>
+
+
+    <style>
+        body {
+
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            background-color: #808080;
+
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.459);
+        }
+
+        .usuario {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #b1b1b1;
+        }
+
+        .usuario:last-child {
+            border-bottom: none;
+        }
+
+        .usuario img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+            
+    }
+
+        .userInformacao {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .userInformacao.nome {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .userInformacao .endereco {
+            font-size: 14px;
+            color: #5e5e5e;
+
+            
+        }
+
+
+  </style>
+
+
+</head>
+<body>
+
+
+    
+  <div class="card">
+
+    <div class="usuario">
+      <img src="./imgs/pessoa-intensa.jpg">
+
+      <div class="userInformacao">
+        <div class="nome">Fulano</div>
+        <div class="endereco">Lorem ipsum dolor sit</div>
+      </div>
+
+    </div>
+
+    
+    <div class="usuario">
+      <img src="./imgs/pessoa2.jpg">
+
+      <div class="userInformacao">
+        <div class="nome">Ciclano</div>
+        <div class="endereco">Lorem ipsum dolor sit</div>
+      </div>
+
+    </div>
+
+
+    <div class="usuario">
+      <img src="./imgs/pessoa3.jpg">
+      
+      <div class="userInformacao">
+        <div class="nome">Beltrana</div>
+        <div class="endereco">Lorem ipsum dolor sit</div>
+      </div>
+
+    </div>
+
+
+    <div class="usuario">
+      <img src="./imgs/pessoa4.jpg">
+
+      <div class="userInformacao">
+        <div class="nome">Fulana</div>
+        <div class="endereco">Lorem ipsum dolor sit</div>
+
+      </div>
+
+
+    </div>
+  </div>
+</body>
+</html>
