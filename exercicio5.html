@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            height: 100vh;
+            display: grid;
+            /**grid-template-columns: 1fr 1fr 1fr 1fr 1fr;**/
+
+            grid-template-rows: 1fr 2.5fr 1fr;
+
+            grid-template-areas: "header header header header header"  "article article article aside nav" "footer footer footer footer footer";
+        }
+
+        #caixa1 {
+            background-color: rgb(151, 234, 255);
+            grid-area: header;
+        }
+
+        #caixa2 {
+            background-color: pink;
+            grid-area: article;
+        }
+
+        #caixa3 {
+            background-color: rgb(216, 252, 162);
+            grid-area: aside;
+        }
+
+        #caixa4 {
+            background-color: rgb(255, 255, 154);
+            grid-area: nav;
+        }
+
+        #caixa5 {
+            background-color: rgb(224, 147, 255);
+            grid-area: footer;
+        }
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="box" id="caixa1">header</div>
+    <div class="box" id="caixa2">article</div>
+    <div class="box" id="caixa3">aside</div>
+    <div class="box" id="caixa4">nav</div>
+    <div class="box" id="caixa5">footer</div>
+
+</body>
+</html>
